@@ -26,7 +26,7 @@ const About = ({ data }) => {
                     <p>{text}</p>
                   </div>
                   <ul className="st-text-block-details st-mp0">
-                    {details.map((item, index) => (
+                    {details?.map((item, index) => (
                       <li key={index}>
                         <span>{item.title}</span> : <span>{item.info}</span>
                       </li>

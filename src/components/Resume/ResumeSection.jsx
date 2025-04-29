@@ -4,7 +4,7 @@ import "./Resume.scss";
 import SingleResume from './SingleResume';
 
 const ResumeSection = ({ data }) => {
-  const { educationTitle, education, experienceTitle, experience } = data;
+  const { educationTitle, education, experienceTitle, experience } = data.resumeData;
   return (
     <section id="resume" className="st-dark-bg">
       <div className="st-height-b100 st-height-lg-b80"></div>
@@ -23,7 +23,7 @@ const ResumeSection = ({ data }) => {
 
               <div className="st-resume-timeline-wrap" >
                 {
-                  education.map((education, index) => (
+                  education?.map((education, index) => (
                     <SingleResume element={education} key={index} />
                   ))
                 }
@@ -42,7 +42,7 @@ const ResumeSection = ({ data }) => {
 
               <div className="st-resume-timeline-wrap">
                 {
-                  experience.map((experience, index) => (
+                  experience?.map((experience, index) => (
                     <SingleResume element={experience} key={index} />
                   ))
                 }

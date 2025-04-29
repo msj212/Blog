@@ -15,10 +15,8 @@ const Blog = ({ data }) => {
     </section>
   )
 }
-
 Blog.propTypes = {
   variant: PropTypes.string,
   data: PropTypes.object
 }
-
 export default Blog

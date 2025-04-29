@@ -3,7 +3,7 @@ import './Skill.scss';
 import SectionHeading from '../SectionHeading/SectionHeading';
 
 const Skill = ({ data }) => {
-  const { title, text, skills } = data;
+  const { title, text, skills } = data.skillData;
   return (
     <section className="st-dark-bg">
       <div className="st-height-b100 st-height-lg-b80"></div>
@@ -25,7 +25,7 @@ const Skill = ({ data }) => {
           <div className="col-lg-6">
             <div className="st-height-b0 st-height-lg-b30"></div>
             <div className="st-progressbar-wrap">
-              {skills.map((element, index) => (
+              {skills?.map((element, index) => (
                 <div
                   className="st-single-progressbar"
                   key={index}
