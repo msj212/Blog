@@ -19,11 +19,11 @@ const Home = () => {
   const [resumeData, setResumeData] = useState({});
   const [portfolioDataList, setPortfolioData] = useState([]);
   const [BlogDatalist, setBlogData] = useState({});
-  const API_URL = "https://jayamani.stss.in/backend/Blog/Routes.php?routes=";
+  const API_URL = "https://jayamaniblogbackend.stss.in/Routes.php?routes=";
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const homeResponse = await axios.get(`${API_URL}Home`);
+        const homeResponse = await axios.get(`${API_URL}  `);
         if (homeResponse.data.status === "201") {
           setHomeData(homeResponse.data.data);
         }
