@@ -23,7 +23,7 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const homeResponse = await axios.get(`${API_URL}  `);
+        const homeResponse = await axios.get(`${API_URL}Home`);
         if (homeResponse.data.status === "201") {
           setHomeData(homeResponse.data.data);
         }
