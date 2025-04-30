@@ -184,4 +184,9 @@ class MYBLOG
 
         return json_encode(["status" => "201", "data" => $blogData]);
     }
+
+    public function Addblog()
+    {
+        
+    }
 }

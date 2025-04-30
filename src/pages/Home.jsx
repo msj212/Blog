@@ -19,7 +19,7 @@ const Home = () => {
   const [resumeData, setResumeData] = useState({});
   const [portfolioDataList, setPortfolioData] = useState([]);
   const [BlogDatalist, setBlogData] = useState({});
-  const API_URL = "http://192.168.1.24/msjblog/md/backend/Routes.php?routes=";
+  const API_URL = "https://jayamani.stss.in/backend/Routes.php?routes=";
   useEffect(() => {
     const fetchData = async () => {
       try {
